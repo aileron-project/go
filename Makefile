@@ -20,5 +20,5 @@ include scripts/_makefiles/shfmt.mk
 include scripts/_makefiles/trivy.mk
 include scripts/_makefiles/util.mk
 
-export GOLANGCI_LINT_OPTION += scripts/.golangci.yaml
+export GOLANGCI_LINT_OPTION += --config scripts/.golangci.yaml
 export CSPELL_OPTION += --config scripts/.cspell.yaml 
