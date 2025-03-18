@@ -3,7 +3,7 @@ package bar_test
 import (
 	"fmt"
 
-	bar "github.com/aileron-project/scripts/pkg-bar"
+	bar "github.com/aileron-project/go/pkg-bar"
 )
 
 func ExampleAdd() {

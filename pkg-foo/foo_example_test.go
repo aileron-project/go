@@ -3,7 +3,7 @@ package foo_test
 import (
 	"fmt"
 
-	foo "github.com/aileron-project/scripts/pkg-foo"
+	foo "github.com/aileron-project/go/pkg-foo"
 )
 
 func ExampleAdd() {

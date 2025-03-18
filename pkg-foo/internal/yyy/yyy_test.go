@@ -3,7 +3,7 @@ package yyy_test
 import (
 	"testing"
 
-	"github.com/aileron-project/scripts/pkg-foo/internal/yyy"
+	"github.com/aileron-project/go/pkg-foo/internal/yyy"
 )
 
 func TestFuncYYY(t *testing.T) {

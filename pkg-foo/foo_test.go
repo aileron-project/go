@@ -3,7 +3,7 @@ package foo_test
 import (
 	"testing"
 
-	foo "github.com/aileron-project/scripts/pkg-foo"
+	foo "github.com/aileron-project/go/pkg-foo"
 )
 
 func TestAdd(t *testing.T) {

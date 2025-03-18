@@ -5,7 +5,7 @@ import (
 	"math/rand/v2"
 	"testing"
 
-	foo "github.com/aileron-project/scripts/pkg-foo"
+	foo "github.com/aileron-project/go/pkg-foo"
 )
 
 func BenchmarkAdd(b *testing.B) {

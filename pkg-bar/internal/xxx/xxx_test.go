@@ -3,7 +3,7 @@ package xxx_test
 import (
 	"testing"
 
-	"github.com/aileron-project/scripts/pkg-bar/internal/xxx"
+	"github.com/aileron-project/go/pkg-bar/internal/xxx"
 )
 
 func TestFuncXXX(t *testing.T) {
