@@ -11,6 +11,10 @@ jobs:
     uses: aileron-project/scripts/.github/workflows/check-suite-common.yaml@main
     secrets: inherit
 
+  proto:
+    uses: aileron-project/scripts/.github/workflows/check-suite-proto.yaml@main
+    secrets: inherit
+
   go:
     uses: aileron-project/scripts/.github/workflows/check-suite-go.yaml@main
     secrets: inherit
