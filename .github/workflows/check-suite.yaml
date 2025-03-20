@@ -8,9 +8,9 @@ permissions:
 
 jobs:
   common:
-    uses: aileron-project/scripts/.github/workflows/check-suite-common@main
+    uses: aileron-project/scripts/.github/workflows/check-suite-common.yaml@main
     secrets: inherit
 
   go:
-    uses: aileron-project/scripts/.github/workflows/check-suite-go@main
+    uses: aileron-project/scripts/.github/workflows/check-suite-go.yaml@main
     secrets: inherit
