@@ -1,6 +1,9 @@
 name: Check Suite
 
-on: push
+on:
+  workflow_dispatch: {}
+  workflow_call: {}
+  push: {}
 
 permissions:
   contents: read
