@@ -7,48 +7,10 @@ permissions:
   contents: read 
 
 jobs:
-  spell:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-      - uses: actions/setup-node@v4
-      - uses: aileron-project/scripts/.github/actions/cspell@main
-  fmt:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-      - uses: aileron-project/scripts/.github/actions/setup-go@main
-      - uses: aileron-project/scripts/.github/actions/go-fmt@main
-  lint:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-      - uses: aileron-project/scripts/.github/actions/setup-go@main
-      - uses: aileron-project/scripts/.github/actions/golangci-lint@main
-  vet:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-      - uses: aileron-project/scripts/.github/actions/setup-go@main
-      - uses: aileron-project/scripts/.github/actions/go-vet@main
+  common:
+    uses: aileron-project/scripts/.github/workflows/check-suite-common@main
+    secrets: inherit
 
-  copyright:
-    runs-on: ubuntu-latest
-    timeout-minutes: 15
-    steps:
-      - uses: actions/checkout@v4
-        with:
-          submodules: true
-      - uses: aileron-project/scripts/.github/actions/scanoss@main
+  go:
+    uses: aileron-project/scripts/.github/workflows/check-suite-go@main
+    secrets: inherit
