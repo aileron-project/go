@@ -8,17 +8,24 @@ ifneq (,$(wildcard .env))
   include .env
 endif
 
+include scripts/_makefiles/buf.mk
 include scripts/_makefiles/cspell.mk
 include scripts/_makefiles/go-build.mk
+include scripts/_makefiles/go-licenses.mk
 include scripts/_makefiles/go-test.mk
 include scripts/_makefiles/go.mk
+include scripts/_makefiles/goda.mk
 include scripts/_makefiles/golangci-lint.mk
+include scripts/_makefiles/govulncheck.mk
+include scripts/_makefiles/markdownlint.mk
+include scripts/_makefiles/prettier.mk
 include scripts/_makefiles/protolint.mk
 include scripts/_makefiles/scanoss.mk
 include scripts/_makefiles/shellcheck.mk
 include scripts/_makefiles/shfmt.mk
 include scripts/_makefiles/trivy.mk
 include scripts/_makefiles/util.mk
+
 
 export GOLANGCI_LINT_OPTION += --config scripts/.golangci.yaml
 export CSPELL_OPTION += --config scripts/.cspell.yaml 
